@@ -25,6 +25,6 @@
         fw:AcrylicWindow.TintOpacity=".8"
     -->
     <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="If you press Win+Alt+O a new window with tabcontrol will open fine"/><LineBreak/><LineBreak/><Run Text="Lock computer and unlock"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+O twice (one window will open file, second will be blank)"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+P to open window without TabControl (always opens fine) "/><LineBreak/><LineBreak/><Run Text="If you remove &lt;ui:ModernWPF's XamlControlsResources /&gt; from app.xaml, it will always open fine"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="If you press Win+Alt+O a new window with tabcontrol will open fine"/><LineBreak/><LineBreak/><Run Text="Lock computer and unlock"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+O twice (one window will open file, second will be blank)"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+P to open window without TabControl (always opens fine) "/><LineBreak/><LineBreak/><Run Text="If you remove ModernWPF's  &lt;ui:XamlControlsResources /&gt; from app.xaml, it will always open fine"/></TextBlock>
     </Grid>
 </Window>
