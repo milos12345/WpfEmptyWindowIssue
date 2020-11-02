@@ -1,0 +1,27 @@
+﻿<Application
+    x:Class="WpfEmptyWindowIssue.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WpfEmptyWindowIssue"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+              
+                <ui:XamlControlsResources />
+                <!--  Remove above line and TabControl will render always  -->
+
+                <ui:ThemeResources>
+                    <!--  CanBeAccessedAcrossThreads="{x:Static local:App.IsMultiThreaded}"  -->
+                    <ui:ThemeResources.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Light" />
+                        <ResourceDictionary x:Key="Dark" />
+                    </ui:ThemeResources.ThemeDictionaries>
+                </ui:ThemeResources>
+
+            </ResourceDictionary.MergedDictionaries>
+            <!--  Other app resources here  -->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

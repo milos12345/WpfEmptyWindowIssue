@@ -1,0 +1,30 @@
+﻿<Window
+    x:Class="WpfEmptyWindowIssue.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfEmptyWindowIssue"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    KeyUp="Window_KeyUp"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <!--
+        ui:WindowHelper.UseModernWindowStyle="True"
+        ui:ThemeManager.IsThemeAware="True"
+        UseLayoutRounding="True"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        fw:AcrylicWindow.FallbackColor="Red"
+        fw:AcrylicWindow.TintColor="Green"
+        fw:AcrylicWindow.TintOpacity=".8"
+    -->
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="If you press Win+Alt+O a new window with tabcontrol will open fine"/><LineBreak/><LineBreak/><Run Text="Lock computer and unlock"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+O twice (one window will open file, second will be blank)"/><LineBreak/><LineBreak/><Run Text="Press Win+Alt+P to open window without TabControl (always opens fine) "/><LineBreak/><LineBreak/><Run Text="If you remove &lt;ui:ModernWPF's XamlControlsResources /&gt; from app.xaml, it will always open fine"/></TextBlock>
+    </Grid>
+</Window>
