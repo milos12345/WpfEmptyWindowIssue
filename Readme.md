@@ -8,4 +8,4 @@ Run program
 
 -Press Win+Alt+P (Or F12) to open window without TabControl (always opens fine) 
 
-If you remove line <ui:ModernWPF's XamlControlsResources /> from app.xaml, it will always open fine
+If you remove line <ui:XamlControlsResources /> from app.xaml, it will always open fine
